@@ -1,0 +1,21 @@
+[project]
+name = "bankproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "hasnainbusiness204@gmail.com", email = "163559600+Hasnain-Software-Developer@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.100.1",
+]
+
+[project.scripts]
+bankproject = "bankproject:main"
+has = "bankproject.main:final"
+hass = "bankproject.hello:final"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
