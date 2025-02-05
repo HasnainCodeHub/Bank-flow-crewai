@@ -14,7 +14,6 @@ dependencies = [
 [project.scripts]
 bankproject = "bankproject:main"
 has = "bankproject.main:final"
-hass = "bankproject.hello:final"
 
 [build-system]
 requires = ["hatchling"]
