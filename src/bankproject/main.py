@@ -26,12 +26,12 @@ class BankFlow(Flow):
             api_key=os.getenv("GOOGLE_API_KEY"),
             model="gemini/gemini-1.5-flash",
             messages=[
-                {"role": "user", "content": f"Give 3 Good Points And 3 Bad Points of {bank_name}"}
+                {"role": "user", "content": f"Give 3 Good Points And 3 Bad Points of {bank_name} return the Name Of Generated Bank Also"}
             ]
         )
         result = response.choices[0].message.content
         print(f"Points: {result}")
-        return result  
+        return result
 
 
 
