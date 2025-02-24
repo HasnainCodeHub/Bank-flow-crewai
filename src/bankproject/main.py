@@ -11,7 +11,7 @@ class BankFlow(Flow):
     def generate_name(self):
         response = completion(
             api_key=os.getenv("GOOGLE_API_KEY"),
-            model="gemini/gemini-1.5-flash",
+            model="gemini/gemini-2.0-flash-exp",
             messages=[
                 {"role": "user", "content": "Generate a name of Pakistan's Top Bank"}
             ]
